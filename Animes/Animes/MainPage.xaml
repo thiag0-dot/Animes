@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Animes.MainPage">
+
+
+    <StackLayout BackgroundColor="#564d4d">
+        <Frame BackgroundColor="#000000" Padding="24">
+            <Label Text="ANIMES" HorizontalTextAlignment="Center" TextColor="#db0000" FontSize="40" FontAttributes="Bold"/>
+        </Frame>
+
+        <Grid RowDefinitions="*, *, *, *" ColumnDefinitions="*, *">
+            <ImageButton x:Name="btnNaruto" Clicked="button_Clicked" Grid.RowSpan="50" Grid.Column="0" Aspect="AspectFill"/>
+            <ImageButton x:Name="btnonepiece" Clicked="onepiece_button" Grid.RowSpan="50" Grid.Column="1" Aspect="AspectFill"/>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>

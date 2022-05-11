@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Animes.animes_.onepiecepix">
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="#564d4d">
+            <Grid RowDefinitions="250" ColumnDefinitions="*">
+                <WebView x:Name="naruto"
+                          Source="https://www.youtube.com/embed/eS0hCgXMnT4"
+                         HeightRequest="500" WidthRequest="500"
+                         Grid.ColumnSpan="2" Grid.Row="0" Grid.Column="0" VerticalOptions="FillAndExpand" BackgroundColor="#000000"/>
+            </Grid>
+
+            <Grid RowDefinitions="*, *, *" ColumnDefinitions="*, *">
+                <StackLayout Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="0">
+                    <Frame Grid.Row="1" BackgroundColor="#000000" >
+                        <Label Text="Sinopse" VerticalOptions="Center" HorizontalOptions="Center" TextColor="#831010" FontSize="35" FontAttributes="Bold"/>
+                    </Frame>
+
+                    <Frame Grid.Row="2" >
+                        <Label Text="One Piece segue a história de um grupo de piratas liderado por Monkey D. Luffy. O garoto, que possui um corpo elástico, pretende se tornar o Rei dos Piratas e para isso deve encontrar o One pPiece, tesouro misterioso capaz de torná-lo imbatível, segundo as lendas." />
+                    </Frame>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
